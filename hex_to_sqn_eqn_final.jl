@@ -104,7 +104,7 @@ function master_equation(n1, n2, t, N)
     tot = 0
     for m1 in 0:(N-1)
         for m2 in 0:(N-1)
-            trig_bit = cos(2*pi*n1*m1/N)*cos(2*pi*n2*m2/N) + sin(2*pi*n1*m1/N)*sin(2*pi*n2*m2/N)
+            trig_bit = cos(2*pi*(n1-n01)*m1/N)*cos(2*pi*(n2-n02)*m2/N) + sin(2*pi*(n1-n01)*m1/N)*sin(2*pi*(n2-n02)*m2/N)
             C = sqrt((1 + 4*(cos(2*pi*m1 / N))^2 + 4*cos(2*pi*m1 / N)*cos(2*pi*m2 / N))/9)^t
 
             tot = tot + (trig_bit * C)
