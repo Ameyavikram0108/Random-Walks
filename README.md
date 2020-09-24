@@ -8,6 +8,9 @@
 
 #hex_to_square_map.jl presents the simulation of the random walk on internal states with periodic boundary conditions.
 
+#squarelattice(1).jl is the simulation of the random walk under reflecting boundary conditions and evaluates the analytic expression (Equation 4.1).
+
+
 
 
 
